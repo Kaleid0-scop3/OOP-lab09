@@ -34,10 +34,6 @@ public final class SimpleController implements Controller {
             throw new IllegalStateException();
         }
         IO.println(nextString);
-        addToHistory(nextString);
-    }
-
-    private void addToHistory(final String str) {
-        history.add(str);
+        history.add(nextString);
     }
 }
